@@ -14,10 +14,13 @@ function getPlugins () {
         new CopyPlugin({
             patterns: [
                 {
-                    from: __dirname + '/img',
-                    to  : path.join(__dirname, '..', 'public/img')
+                    context: __dirname + '/static',
+                    from   : '**/*',
+                    to     : path.join(__dirname, '..', 'public')
                 },
             ]
+        }, {
+            copyUnmodified: true
         }),
 
         new MiniCssExtractPlugin({
@@ -34,7 +37,7 @@ module.exports = (mode, argv) => {
 
         output: {
             filename: 'js/[name].js',
-            path    : path.resolve(__dirname, '..', 'public')
+            path    : path.resolve(__dirname, '../public')
         },
 
         module: {

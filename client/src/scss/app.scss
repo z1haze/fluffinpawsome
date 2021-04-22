@@ -1,5 +1,9 @@
 @import '~bootstrap/scss/bootstrap';
 
+body {
+  background-image: url('/img/bg.jpg');
+}
+
 img {
   position: absolute;
   left: 50%;

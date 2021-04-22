@@ -1,6 +1,6 @@
 ![Logo](docs/img/logo.png "Logo")
 
-Express-Boilerplate
+Fluffin' Pawsome website
 ---
 
-> The purpose of the repository is to speed up the process of spinning up a new express website project
+> Welcome to the Fluffin' Pawsome mobile grooming website
