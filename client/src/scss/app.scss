@@ -1,12 +1,29 @@
+@import 'variables';
 @import '~bootstrap/scss/bootstrap';
+
+@font-face {
+  font-family: 'Ludicrous';
+  src: url('/fonts/Ludicrous.woff') format('woff');
+}
+
+:root {
+  --bs-font-sans-serif: 'Montserrat';
+  --bs-font-accent: 'Ludicrous', Arial;
+  --bs-primary: #47c2c9;
+}
 
 body {
   background-image: url('/img/bg.jpg');
+  font: 1rem/1.5 var(--bs-font-sans-serif);
 }
 
-img {
+main {
   position: absolute;
   left: 50%;
   top: 50%;
   transform: translate(-50%, -100%);
+}
+
+.font-accent {
+  font-family: var(--bs-font-accent);
 }
