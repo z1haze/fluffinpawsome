@@ -24,6 +24,14 @@ main {
   transform: translate(-50%, -100%);
 }
 
+.logo {
+  width: 300px;
+
+  @include media-breakpoint-up(md) {
+    width: 400px;
+  }
+}
+
 .font-accent {
   font-family: var(--bs-font-accent);
 }
